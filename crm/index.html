@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mijozlar CRM</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Mijozlar</h1>
+    <button class="btn" id="add">+ Yangi mijoz</button>
+  </header>
+  <div class="stats" id="stats"></div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Ism, kompaniya yoki telefon bo'yicha qidirish">
+    <select id="f"></select>
+  </div>
+  <div class="list" id="list"></div>
+</div>
+
+<dialog id="dlg">
+  <form method="dialog" id="form" style="margin:0">
+    <h2 id="dt" style="margin:0 0 4px;font-size:18px">Mijoz</h2>
+    <label>Ism<input id="name" required></label>
+    <label>Kompaniya<input id="co"></label>
+    <label>Telefon<input id="ph" type="tel"></label>
+    <label>Bitim summasi (so'm)<input id="amt" type="number" min="0" step="1000"></label>
+    <label>Holat<select id="st"></select></label>
+    <label>Izoh<textarea id="note" rows="2"></textarea></label>
+    <div class="foot">
+      <button type="button" class="btn ghost" id="cancel">Bekor qilish</button>
+      <button type="submit" class="btn">Saqlash</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
